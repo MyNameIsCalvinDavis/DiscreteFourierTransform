@@ -25,7 +25,7 @@ def SquarePath():
 def MLPath(w, h):
     # Get point locations first
     cities = []
-    with open("/home/ppc/Projects/Four/mona-lisa100K.tsp") as f:
+    with open("mona-lisa100K.tsp") as f:
         for line in f:
             line = line.replace("\n", "").split(" ")
             cities.append((
@@ -45,7 +45,7 @@ def MLPath(w, h):
 
 def BoobPath(w, h):
     path = []
-    with open("/home/ppc/Projects/Four/Boob.txt") as f:
+    with open("Boob.txt") as f:
         for line in f:
             line = line.replace("\n", "").split(" ")
             line = line[0].split(".")[0] + " " + line[1].split(".")[0]
@@ -59,7 +59,7 @@ def BoobPath(w, h):
 
 def RabbitPath(w, h):
     path = []
-    with open("/home/ppc/Projects/Four/Rabbit.txt") as f:
+    with open("Rabbit.txt") as f:
         for line in f:
             line = line.replace("\n", "").split(" ")
             line = line[0].split(".")[0] + " " + line[1].split(".")[0]
@@ -73,7 +73,7 @@ def RabbitPath(w, h):
 
 def MLPath2(w, h):
     path = []
-    with open("/home/ppc/Projects/Four/ML.txt") as f:
+    with open("ML.txt") as f:
         for line in f:
             line = line.replace("\n", "").split(" ")
             line = line[0].split(".")[0] + " " + line[1].split(".")[0]
